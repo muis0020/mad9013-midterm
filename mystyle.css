@@ -6,7 +6,13 @@ color scheme: #457F30 - max sat
                 #617F56 - grey tone
                 #6ECC4C - med sat
 
-font scale - fifth
+font scale -perfect fifth
+        5.063em 
+        2.25em 
+        1.5em 
+        1em 
+        0.667em 
+        0.444em 
 */
 
 *{
@@ -40,6 +46,7 @@ p {margin-bottom: 1.3em;
 
 h1, h2, h3, h4 {
   padding: 1rem;
+  padding-top: 0;
   margin: 0 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
@@ -76,6 +83,8 @@ img{
 
 .mainnav ul{
   list-style:none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .mainnav a,
@@ -103,6 +112,17 @@ li{
 
 /* larger fonts sizes for larger layouts*/
  @media all and (min-width: 35rem){
+     
+     /* reduce whitespace */
+     h1, h2, h3, h4 {
+  padding-bottom: 0;
+     }
+
+    .mainnav ul{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+     
      h1{
         font-size: 5.063rem;
     }
@@ -211,6 +231,15 @@ li{
         float: right;
         /*background-color: #C2FFAC;*/
         padding: 1rem;
+    }
+    
+    
+    aside p{
+        font-size: .75rem
+    }
+    
+    aside h3{
+        font size: 1.5rem
     }
     
     .footer p{

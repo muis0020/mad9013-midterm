@@ -201,14 +201,16 @@ li{
         float:left;
         width: 25%;
         height: 100%;
-        background-image: url("http://lorempixel.com/200/400/cats");
+        background-image: url("http://lorempixel.com/300/400/cats");
     }
     
     .mainnav a,
     .mainnav a:visited{
   
-        background-color: rgba(0,0,0,0);;
+        background-color: rgba(0,0,0,0);
+        text-shadow: 1px 1px #000, -1px -1px #617F56;
     }
+    
     body{
         position: relative;
     }
